@@ -1,7 +1,20 @@
+#from pymongo import MongoClient
 import speech_recognition as sr
 import cohere
 import pyttsx3
 import random
+
+
+# connection_string = 'mongodb+srv://<username>:<password>@cluster0.<your-cluster>.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+
+"""try:
+    client = MongoClient(connection_string)
+    db = client['hospital_database']  # Use your database name
+    patients_collection = db['patients']  # Use your collection name
+    print("Connected to MongoDB.")
+except Exception as e:
+    print(f"Error connecting to MongoDB: {e}")
+    exit()"""
 
 #Initialize the Cohere client with the API key
 co = cohere.Client('8MYY4YXA4Ci1ne6MPRSCEHUgX1POwIpV6rLmMj2N')
